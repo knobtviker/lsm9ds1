@@ -7,7 +7,7 @@ import android.support.annotation.IntRange;
 import android.support.annotation.NonNull;
 
 import com.google.android.things.pio.I2cDevice;
-import com.google.android.things.pio.PeripheralManagerService;
+import com.google.android.things.pio.PeripheralManager;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -327,9 +327,9 @@ public class Lsm9ds1 implements Closeable {
      * @throws IOException
      */
     private Lsm9ds1(@NonNull final Builder builder) throws IOException {
-        final PeripheralManagerService pioService = new PeripheralManagerService();
-        final I2cDevice accelGyroDevice = pioService.openI2cDevice(builder.mI2cBus, builder.mI2cAddressAccelGyro);
-        final I2cDevice magDevice = pioService.openI2cDevice(builder.mI2cBus, builder.mI2cAddressMag);
+        final PeripheralManager peripheralManager = PeripheralManager.getInstance();
+        final I2cDevice accelGyroDevice = peripheralManager.openI2cDevice(builder.mI2cBus, builder.mI2cAddressAccelGyro);
+        final I2cDevice magDevice = peripheralManager.openI2cDevice(builder.mI2cBus, builder.mI2cAddressMag);
         try {
             connect(builder, accelGyroDevice, magDevice);
         } catch (IOException | RuntimeException e) {
