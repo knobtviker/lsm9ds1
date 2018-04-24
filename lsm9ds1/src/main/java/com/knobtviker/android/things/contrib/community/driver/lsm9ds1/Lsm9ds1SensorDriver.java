@@ -243,7 +243,6 @@ public class Lsm9ds1SensorDriver implements AutoCloseable {
         private static final float DRIVER_MAX_RANGE = Lsm9ds1.MAX_ACCEL_RANGE_G_DEFAULT;
         private static final float DRIVER_POWER = Lsm9ds1.MAX_POWER_CONSUMPTION_X_UA / 1000.f;
         private static final int DRIVER_VERSION = 1;
-        private static final String DRIVER_REQUIRED_PERMISSION = "";
 
         private boolean mEnabled;
         private UserSensor mUserSensor;
@@ -260,7 +259,6 @@ public class Lsm9ds1SensorDriver implements AutoCloseable {
                     .setPower(DRIVER_POWER)
                     .setMinDelay(DRIVER_XG_MIN_DELAY_US)
                     .setMaxDelay(DRIVER_XG_MAX_DELAY_US)
-                    .setRequiredPermission(DRIVER_REQUIRED_PERMISSION)
                     .setUuid(UUID.randomUUID())
                     .setDriver(this)
                     .build();
@@ -290,7 +288,6 @@ public class Lsm9ds1SensorDriver implements AutoCloseable {
         private static final float DRIVER_MAX_RANGE = Lsm9ds1.MAX_GYRO_RATE_DPS_DEFAULT;
         private static final float DRIVER_POWER = Lsm9ds1.MAX_POWER_CONSUMPTION_G_UA / 1000.f;
         private static final int DRIVER_VERSION = 1;
-        private static final String DRIVER_REQUIRED_PERMISSION = "";
 
         private boolean mEnabled;
         private UserSensor mUserSensor;
@@ -307,7 +304,6 @@ public class Lsm9ds1SensorDriver implements AutoCloseable {
                     .setPower(DRIVER_POWER)
                     .setMinDelay(DRIVER_XG_MIN_DELAY_US)
                     .setMaxDelay(DRIVER_XG_MAX_DELAY_US)
-                    .setRequiredPermission(DRIVER_REQUIRED_PERMISSION)
                     .setUuid(UUID.randomUUID())
                     .setDriver(this)
                     .build();
@@ -337,7 +333,6 @@ public class Lsm9ds1SensorDriver implements AutoCloseable {
         private static final float DRIVER_MAX_RANGE = Lsm9ds1.MAX_MAG_GAIN_GS_DEFAULT;
         private static final float DRIVER_POWER = Lsm9ds1.MAX_POWER_CONSUMPTION_M_UA / 1000.f;
         private static final int DRIVER_VERSION = 1;
-        private static final String DRIVER_REQUIRED_PERMISSION = "";
 
         private boolean mEnabled;
         private UserSensor mUserSensor;
@@ -354,7 +349,6 @@ public class Lsm9ds1SensorDriver implements AutoCloseable {
                     .setPower(DRIVER_POWER)
                     .setMinDelay(DRIVER_MAG_MIN_DELAY_US)
                     .setMaxDelay(DRIVER_MAG_MAX_DELAY_US)
-                    .setRequiredPermission(DRIVER_REQUIRED_PERMISSION)
                     .setUuid(UUID.randomUUID())
                     .setDriver(this)
                     .build();
@@ -385,7 +379,6 @@ public class Lsm9ds1SensorDriver implements AutoCloseable {
         // The temperature is provided by the Accel
         private static final float DRIVER_POWER = Lsm9ds1.MAX_POWER_CONSUMPTION_X_UA / 1000.f;
         private static final int DRIVER_VERSION = 1;
-        private static final String DRIVER_REQUIRED_PERMISSION = "";
 
         private boolean mEnabled;
         private UserSensor mUserSensor;
@@ -402,7 +395,6 @@ public class Lsm9ds1SensorDriver implements AutoCloseable {
                     .setPower(DRIVER_POWER)
                     .setMinDelay(DRIVER_XG_MIN_DELAY_US)
                     .setMaxDelay(DRIVER_XG_MAX_DELAY_US)
-                    .setRequiredPermission(DRIVER_REQUIRED_PERMISSION)
                     .setUuid(UUID.randomUUID())
                     .setDriver(this)
                     .build();
