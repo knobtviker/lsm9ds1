@@ -1,0 +1,16 @@
+{
+    "title": "LSM9DS1",
+    "category": "3-axis accelerometer, gyroscope, magnetometer",
+    "published-maven": {
+        "maven-url": "https://jitpack.io",
+        "groupid": "com.github.knobtviker",
+        "artifactid": "lsm9ds1"
+    },
+    "compatible-with": [
+        {
+            "title": "SparkFun 9DoF IMU Breakout",
+            "url": "https://www.sparkfun.com/products/13284",
+            "photo": "https://cdn.sparkfun.com//assets/parts/1/0/5/3/3/13284-02.jpg"
+        }
+    ]
+}
